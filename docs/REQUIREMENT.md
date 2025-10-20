@@ -6,7 +6,7 @@
 - **UI Library:** shadcn/ui + TailwindCSS V4
 - **Forms:** React Hook Form + Zod validation
 - **Auth:** NextAuth.js
-- **Database:** MongoDB (via Mongoose)
+- **Database:** Postgresql (using drizzle) (from aiven)
 - **HTTP Client:** Axios (wrapped with TanStack Query)
 - **Data Fetching:** fetch (for SSR) + React Query (for client)
 - **Language:** TypeScript
@@ -18,7 +18,7 @@
 
 ## 🎯 Objective
 
-Build a full-stack, authenticated To-Do application to practice **Next.js App Router**, **Server Actions**, **NextAuth**, **MongoDB**, and **modern React tooling**.
+Build a full-stack, authenticated To-Do application to practice **Next.js App Router**, **Server Actions**, **NextAuth**, **PostgreSQL (drizzle orm)**, and **modern React tooling**.
 
 Users can register, log in, manage personal to-dos (CRUD) on daily basis, and view progress — all within a clean, responsive UI built using **shadcn/ui**.
 
@@ -73,7 +73,7 @@ Users can register, log in, manage personal to-dos (CRUD) on daily basis, and vi
   - `DELETE /api/todos/:id` → Delete task
 - Axios instance with interceptors (attach JWT/session token)
 
-### 7. **Database (MongoDB)**
+### 7. **Database (PostgreSQL (drizzle orm))**
 
 - User collection
 - Todo collection (referencing user ID)
